@@ -3,7 +3,7 @@
     --darkgrey-color: #8a817c;
     --grey-color: #bcb8b1;
     --light-color: #f4f3ee;
-    --skin-color: #e0afa0;
+    --skin-color: #eb2326;
     --boxShadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 0px 1px rgba(0, 0, 0, 0.16);
 }
 
@@ -115,9 +115,24 @@ body {
     font-size: 12px;
 }
 
+.active-player, .active-player:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--skin-color);
+    background-color: var(--grey-color);
+}
+
+.active-player * {
+    opacity: 1;
+}
+
 /* STATS */
 #player-picker-stats {
     margin-top: -183px;
     height: 500px;
     background-color: var(--dark-color);
+}
+
+#player-picker-stats-inner {
+    position: relative;
+    top: 200px;
 }
