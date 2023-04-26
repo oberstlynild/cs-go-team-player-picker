@@ -154,6 +154,7 @@ body {
 
 #player-stats-top {
     text-align: center;
+    z-index: 100;
 }
 
 #player-picker-stats-inner-grid {
@@ -192,11 +193,11 @@ body {
 #player-stats-kd *,
 #player-stats-hs *,
 #player-stats-adr *,
-#player-stats-kast *{
+#player-stats-kast * {
     margin: 3px;
 }
 
-#player-stats-image{
+#player-stats-image {
     position: absolute;
     bottom: 10px;
     right: 10px;
