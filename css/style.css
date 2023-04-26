@@ -82,9 +82,42 @@ body {
     margin-top: -80px;
 }
 
-#player-picker-players div{
-    border: 1px solid black;
+.player-item {
+    border: 1px solid transparent;
     background-color: var(--darkgrey-color);
     box-shadow: var(--boxShadow);
-    border-radius: 5px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.player-item * {
+    opacity: 0.5;
+}
+
+.player-item:hover {
+    background-color: var(--grey-color);
+    transform: scale(1.05);
+}
+
+.player-item img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.player-item-info {
+    margin: 0;
+}
+
+.player-item-info-last {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+/* STATS */
+#player-picker-stats {
+    margin-top: -183px;
+    height: 500px;
+    background-color: var(--dark-color);
 }
