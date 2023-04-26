@@ -4,6 +4,31 @@
     --grey-color: #bcb8b1;
     --light-color: #f4f3ee;
     --skin-color: #e0afa0;
+    --boxShadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 0px 1px rgba(0, 0, 0, 0.16);
+}
+
+.dark-color {
+    color: var(--dark-color);
+}
+
+.darkgrey-color {
+    color: var(--darkgrey-color);
+}
+
+.grey-color {
+    color: var(--grey-color);
+}
+
+.light-color {
+    color: var(--light-color);
+}
+
+.skin-color {
+    color: var(--skin-color);
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -12,6 +37,54 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
+}
+
+/* HEADER */
+#player-picker-header {
+    background-color: var(--darkgrey-color);
+    height: 200px;
+    display: flex;
+    padding: 20px;
+}
+
+#player-picker-logo-wrapper {
+    margin-right: 15px;
+}
+
+#player-picker-logo-wrapper img {
+    height: 70px;
+    width: 70px;
+    margin-top: 18px;
+}
+
+.player-picker-header-title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.player-picker-header-text {
+    margin: 0;
+    transition: 0.2s;
+}
+
+.player-picker-header-link:hover {
+    color: var(--skin-color);
+}
+
+/* PLAYERS */
+#player-picker-players {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+    margin-top: -80px;
+}
+
+#player-picker-players div{
+    border: 1px solid black;
+    background-color: var(--darkgrey-color);
+    box-shadow: var(--boxShadow);
+    border-radius: 5px;
 }
