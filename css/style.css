@@ -1,1 +1,17 @@
+:root {
+    --dark-color: #463f3a;
+    --darkgrey-color: #8a817c;
+    --grey-color: #bcb8b1;
+    --light-color: #f4f3ee;
+    --skin-color: #e0afa0;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
