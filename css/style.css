@@ -3,7 +3,7 @@
     --darkgrey-color: #8a817c;
     --grey-color: #bcb8b1;
     --light-color: #f4f3ee;
-    --skin-color: #eb2326;
+    --skin-color: #e0afa0;
     --boxShadow: 0px 0px 8px rgba(0, 0, 0, 0.24), 0px 0px 1px rgba(0, 0, 0, 0.16);
 }
 
@@ -27,8 +27,13 @@
     color: var(--skin-color);
 }
 
+.bold-text {
+    font-weight: 600;
+}
+
 * {
     font-family: 'Open Sans', sans-serif;
+    border: none;
 }
 
 body {
@@ -115,7 +120,8 @@ body {
     font-size: 12px;
 }
 
-.active-player, .active-player:hover {
+.active-player,
+.active-player:hover {
     transform: scale(1.1);
     border: 1px solid var(--skin-color);
     background-color: var(--grey-color);
@@ -128,11 +134,72 @@ body {
 /* STATS */
 #player-picker-stats {
     margin-top: -183px;
-    height: 500px;
     background-color: var(--dark-color);
+}
+
+#player-stats-role {
+    display: inline;
+    padding: 3px 8px;
+    border: 1px solid var(--grey-color);
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 #player-picker-stats-inner {
     position: relative;
     top: 200px;
+    background-color: var(--dark-color);
+    padding-bottom: 75px;
+}
+
+#player-stats-top {
+    text-align: center;
+}
+
+#player-picker-stats-inner-grid {
+    width: 80%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+}
+
+.player-picker-stats-box {
+    background-color: var(--darkgrey-color);
+    padding: 15px;
+}
+
+.player-stats-box-titles {
+    margin-bottom: 8px;
+}
+
+#player-stats-name,
+#player-stats-age,
+#player-stats-rating,
+#player-stats-kd,
+#player-stats-hs,
+#player-stats-adr,
+#player-stats-kast {
+    display: flex;
+    justify-content: space-between;
+}
+
+#player-stats-name *,
+#player-stats-age *,
+#player-stats-rating *,
+#player-stats-kd *,
+#player-stats-hs *,
+#player-stats-adr *,
+#player-stats-kast *{
+    margin: 3px;
+}
+
+#player-stats-image{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 400px;
+    opacity: 0.4;
 }

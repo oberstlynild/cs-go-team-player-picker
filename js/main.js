@@ -1,5 +1,4 @@
 var playerItem = document.getElementsByClassName('player-item');
-var playerStatsName = document.getElementById('player-stats-name');
 
 for (i = 0; i < playerItem.length; i++) {
     playerItem[i].addEventListener('click', addActiveClass);
@@ -46,7 +45,6 @@ function addStats() {
                     //NU HAR VI STYR PÅ DET
                     console.log(playerItem[i].dataset.id);
                     console.log(players.player[index].id);
-                    playerStatsName.innerHTML = players.player[index].name;
                 }
             }
         }
